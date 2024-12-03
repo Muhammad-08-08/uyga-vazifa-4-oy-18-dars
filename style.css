@@ -1,0 +1,23 @@
+.dark-mode-active {
+  background-color: black !important;
+}
+
+.dark-item-active {
+  transform: translateX(65px);
+  background-color: white !important;
+}
+.body-color {
+  background-color: #444444;
+  color: white;
+}
+.container-color {
+  background-image: linear-gradient(to right, #444444, #444444) !important;
+}
+.card1-color {
+  background-color: #444444;
+  border: none;
+}
+.input-color {
+  background-color: #444444;
+  border: 1px solid #f4f4f444;
+}

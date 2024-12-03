@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="w-full bg-[#6c6565] flex items-center">
+    <div
+        class="container bg-gradient-to-r from-white to-[#46617300] w-[100%] mx-auto border px-[84px] py-[63px] rounded-[10px]">
+        <nav class="flex justify-evenly items-center py-3 mb-[49px]">
+
+            <div>
+                <button class="darkMode w-[95px] rounded-lg h-[30px] bg-gray-100">
+                    <div class="dark-item w-[30px] h-[30px] rounded-full bg-black"></div>
+                </button>
+                <p class="dark-mode-text">Dark Mode</p>
+            </div>
+
+            <form action="" class="flex items-center w-[50%] relative">
+                <img class="w-[28px] h-[28px] absolute bottom-1 left-4" src="./acsess/svg/search.svg" alt="">
+                <input class="pl-16 w-full py-2 border rounded input" type="text"
+                    placeholder="Search for your preferred city...">
+            </form>
+
+            <div class="flex items-center gap-3 w-[14.5%] relative">
+                <img class="w-[28px] h-[28px] absolute bottom-1 left-4" src="./acsess/svg/current-location-icon.svg"
+                    alt="">
+                <button class="joylashuv bg-green-500 text-white w-[100%] pr-3 py-2 rounded-xl text-end">Current
+                    Location</button>
+            </div>
+        </nav>
+        <main class="flex flex-wrap justify-around gap-16">
+            <div
+                class="border px-[107px] py-[51px] text-center rounded-[30px] shadow-black shadow-2xl hover:scale-105 transition-all card1">
+                <h2 class="text-[36px] font-bold text-center">Athens</h2>
+                <h1 class=" text-[96px] "><span class="hour">00</span><span class="ikki-nuqta">:</span><span
+                        class="minute">00</span></h1>
+                <p class="text-[20px] "><span class="day"></span> <span class="kun"></span> <span class="month"></p>
+            </div>
+            <div
+                class="flex items-center gap-5 shadow-black border rounded-[30px] shadow-2xl px-7 hover:scale-105 transition-all card1">
+                <div class="flex flex-col gap-2">
+                    <h2 class="text-[80px] graduse">24°C</h2>
+                    <div class="flex justify-center gap-3 items-center">
+                        <p class="text-[20px]">Feels like:</p>
+                        <h4 class="text-[32px] feels_like">22°C</h4>
+                    </div>
+                    <div class="flex items-center gap-5">
+                        <img src="./acsess/svg/sunrise-white.svg" alt="">
+                        <div class="flex flex-col">
+                            <h5 class="text-[20px]">Sunrise</h5>
+                            <h6 class="text-[16px] Sunrise">06:37 AM</h6>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-5">
+                        <img src="./acsess/svg/sunrise-white.svg" alt="">
+                        <div class="flex flex-col">
+                            <h5 class="text-[20px]">Sunset</h5>
+                            <h6 class="text-[16px] Sunset">20:37 AM</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img class="w-[170px] h-[170px] rounded-[50%] img_condition" src="./acsess/svg/clear2.png" alt="">
+                    <h3 class="text-[32px] text_Sunny">Sunny</h3>
+                </div>
+                <div class="flex flex-col items-center gap-8">
+                    <div class="flex flex-col items-center">
+                        <img src="./acsess/svg/humidity1.svg" alt="">
+                        <h4 class="humidity">41%</h4>
+                        <p>Humidity</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="./acsess/svg/pressure-white1.svg" alt="">
+                        <h4 class="pressure">997hPa</h4>
+                        <p>Pressure</p>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="flex flex-col items-center gap-8">
+                    <div class="flex flex-col items-center">
+                        <img src="./acsess/svg/wind1.svg" alt="">
+                        <h4 class="wind_Speed">2km/h</h4>
+                        <p>Wind Speed</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="./acsess/svg/uv-white1.svg" alt="">
+                        <h4 class="uv">8</h4>
+                        <p>UV</p>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div
+                class="border px-[37px] py-[31px] text-center rounded-[30px] shadow-black shadow-2xl hover:scale-105 transition-all card1 kunlik_ob_havo">
+                <h2 class="text-[36px] font-bold text-center">5 Days Forecast:</h2>
+                <div class="flex items-center gap-8 card">
+                </div>
+            </div>
+            <div
+                class="border px-[60px] py-[31px] text-center rounded-[30px] shadow-black shadow-2xl hover:scale-105 transition-all card1">
+                <h2 class="text-[36px] font-bold text-center mb-4">Hourly Forecast:</h2>
+                <div class="flex gap-5 hourly_forecast">
+                    <div
+                        class="p-5 flex items-center flex-col gap-5 bg-gradient-to-b from-[#F88508] to-[#F6FAD900] rounded-[40px] soat">
+                    </div>
+                 
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
